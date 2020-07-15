@@ -1,0 +1,23 @@
+[package]
+name = "rusty-greeter"
+version = "0.1.0"
+authors = ["xavier zebier <xavier.ernest.zebier@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+rocket = "0.4.5"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+log="0.4.8"
+env_logger = "0.7"
+rusqlite = "0.14"
+
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json","tera_templates","sqlite_pool"]

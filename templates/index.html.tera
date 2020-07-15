@@ -1,0 +1,11 @@
+{% extends "base" %}
+
+{% block content %}
+    <h1>Hi {{name}}</h1>
+    <h3>Here are your items:</h3>
+    <ul>
+       {{error_report.context.application_name}} : {{ error_report.status }}
+    </ul>
+
+    <p>Try going to <a href="/hello/YourName">/hello/YourName</a></p>
+{% endblock content %}
