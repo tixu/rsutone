@@ -1,0 +1,2 @@
+-- SQLite
+SELECT id, app_name, app_version, general_info,error, error_status from reports

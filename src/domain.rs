@@ -1,5 +1,5 @@
 
-    #[derive(Serialize, Deserialize)]
+    #[derive(Serialize, Deserialize,Debug)]
     pub enum Status {
         CREATED,
         HANDLED,
@@ -7,7 +7,7 @@
         REJECTED
     }
 
-    #[derive(Serialize, Deserialize)]
+    #[derive(Serialize, Deserialize, Debug)]
     pub struct ErrorReport {
         pub id: Option<u32>,    
         pub context: Context,
@@ -17,14 +17,14 @@
 
 
 
-    #[derive(Serialize, Deserialize)]
+    #[derive(Serialize, Deserialize,Debug)]
     pub struct Context {
         pub application_name: String,
         pub application_version : String,
         pub general_info : String,
     }
 
-    #[derive(Serialize, Deserialize)]
+    #[derive(Serialize, Deserialize,Debug)]
     pub struct Error {
         pub error: String,
     }

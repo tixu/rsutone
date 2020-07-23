@@ -1,0 +1,19 @@
+{% extends "base" %}
+
+{% block content %}
+    <h1>Application Error Reports </h1>
+       {{name}} : 
+        <div class  = "container">
+            <div class="row row-cols-2">    
+                {% for report in reports %}
+                    <div class="col">
+                        <div class="card text-white bg-dark mb-3"> 
+                            <div class="card-header"> {{ report.context.application_name }} : {{ report.context.application_version}} </div>
+                            <div class="card-body">{{ report.context.general_info}}</div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+</div>
+{% endblock content %}
